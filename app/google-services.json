@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "958025601202",
+    "firebase_url": "https://kchat-82cb8.firebaseio.com",
+    "project_id": "kchat-82cb8",
+    "storage_bucket": "kchat-82cb8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958025601202:android:d81b02db37326d49",
+        "android_client_info": {
+          "package_name": "com.example.keiji.kchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958025601202-tf7b62arrdesec6uf4ca9vt33ogf267v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.keiji.kchat",
+            "certificate_hash": "cb159ed15858f9816bb3e6040aee1d7a61b027b8"
+          }
+        },
+        {
+          "client_id": "958025601202-v55vha9qiun9mpjhvk290c98vp0ec8sa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRJgHletjhfgjdAXVEL4YruvExf_7gBS8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958025601202-v55vha9qiun9mpjhvk290c98vp0ec8sa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
