@@ -81,11 +81,11 @@ public class StatusActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                // initialize progress bar
-                mProgress = new ProgressDialog(StatusActivity.this);
-                mProgress.setTitle("Saving Changes");
-                mProgress.setMessage("Please wait...");
-                mProgress.show();
+//                // initialize progress bar
+//                mProgress = new ProgressDialog(StatusActivity.this);
+//                mProgress.setTitle("Saving Changes");
+//                mProgress.setMessage("Please wait...");
+//                mProgress.show();
 
                 // get status from the edit text
                 String status = mStatus.getEditText().getText().toString();
@@ -99,7 +99,11 @@ public class StatusActivity extends AppCompatActivity {
                         // if successfull dismiss dialog
                         if (task.isSuccessful()) {
 
-                            mProgress.dismiss();
+//                            // dismiss progress bar
+//                            mProgress.dismiss();
+
+                            // go back to parent activity
+                            finish();
 
                         }
                         else {

@@ -149,6 +149,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(settingsIntent);
                 break;
 
+            case R.id.main_allusers_btn:
+                // go to settings acctivity
+                Intent usersIntent = new Intent(MainActivity.this, UsersActivity.class);
+                startActivity(usersIntent);
+                break;
+
         }//switch
 
         return true;

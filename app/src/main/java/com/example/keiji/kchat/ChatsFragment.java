@@ -16,7 +16,7 @@ public class ChatsFragment extends Fragment {
 
     public ChatsFragment() {
         // Required empty public constructor
-    }
+    }//--end of empty CONSTRUCTOR
 
 
     @Override
@@ -24,6 +24,6 @@ public class ChatsFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_chats, container, false);
-    }
+    }//--end of CONSTRUCTOR
 
-}
+}//--END OF FRAGMENT

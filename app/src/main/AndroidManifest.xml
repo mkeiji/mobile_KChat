@@ -23,19 +23,28 @@
         </activity>
         <activity android:name=".StartActivity" />
 
-        <!--register activity-->
+        <!-- register activity -->
         <activity
             android:name=".RegisterActivity"
             android:parentActivityName=".StartActivity" />
-
         <activity android:name=".LoginActivity" />
-
         <activity android:name=".SettingsActivity" />
 
-        <!--status activity-->
+        <!-- status activity -->
         <activity
             android:name=".StatusActivity"
             android:parentActivityName=".SettingsActivity" />
+
+        <!-- image crop activity -->
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <!-- users activity -->
+        <activity
+            android:name=".UsersActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".ProfileActivity"></activity>
     </application>
 
 </manifest>

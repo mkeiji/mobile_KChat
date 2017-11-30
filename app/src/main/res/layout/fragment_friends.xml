@@ -4,10 +4,11 @@
     android:layout_height="match_parent"
     tools:context="com.example.keiji.kchat.FriendsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!-- TODO: insert the recycler view here -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/friends_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="FRIENDS fragment" />
+        android:layout_height="match_parent"/>
+
 
 </FrameLayout>
