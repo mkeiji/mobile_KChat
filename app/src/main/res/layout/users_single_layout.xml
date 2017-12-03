@@ -11,7 +11,7 @@
         android:src="@drawable/default_avatar" />
 
     <TextView
-        android:id="@+id/users_single_name_tv"
+        android:id="@+id/user_single_name_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/user_single_image_cv"
@@ -23,11 +23,11 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/users_single_status_tv"
+        android:id="@+id/user_single_status_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/user_single_image_cv"
-        android:layout_alignStart="@+id/users_single_name_tv"
+        android:layout_alignStart="@+id/user_single_name_tv"
         android:layout_marginBottom="10dp"
         android:text="User Default Status" />
 </RelativeLayout>

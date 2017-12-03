@@ -162,7 +162,7 @@ public class UsersActivity extends AppCompatActivity {
          */
         public void setName (String name) {
 
-            TextView userNameView = mView.findViewById(R.id.users_single_name_tv);
+            TextView userNameView = mView.findViewById(R.id.user_single_name_tv);
             userNameView.setText(name);
 
         }//--end of setName FUNCTION
@@ -173,7 +173,7 @@ public class UsersActivity extends AppCompatActivity {
          */
         public void setUserStatus (String status) {
 
-            TextView userStatusView = mView.findViewById(R.id.users_single_status_tv);
+            TextView userStatusView = mView.findViewById(R.id.user_single_status_tv);
             userStatusView.setText(status);
 
         }//--end of setUserStatus FUNCTION

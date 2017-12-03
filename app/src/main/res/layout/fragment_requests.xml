@@ -4,10 +4,10 @@
     android:layout_height="match_parent"
     tools:context="com.example.keiji.kchat.RequestsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!-- TODO: insert the recycler view here -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/requests_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="REQUESTS fragment" />
+        android:layout_height="match_parent"/>
 
 </FrameLayout>

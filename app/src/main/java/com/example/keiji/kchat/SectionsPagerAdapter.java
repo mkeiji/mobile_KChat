@@ -41,18 +41,18 @@ class SectionsPagerAdapter extends FragmentPagerAdapter {
 
             // request fragment
             case 0:
-                requestsFragment = new RequestsFragment();
-                return requestsFragment;
-
-            // chats fragment
-            case 1:
                 chatsFragment = new ChatsFragment();
                 return chatsFragment;
 
-            // friends fragment
-            case 2:
+            // chats fragment
+            case 1:
                 friendsFragment = new FriendsFragment();
                 return friendsFragment;
+
+            // friends fragment
+            case 2:
+                requestsFragment = new RequestsFragment();
+                return requestsFragment;
 
             // default
             default:
@@ -89,15 +89,15 @@ class SectionsPagerAdapter extends FragmentPagerAdapter {
 
             // requests tab
             case 0:
-                return "Requests";
+                return "Chat";
 
             // chat tab
             case 1:
-                return "Chat";
+                return "Paired";
 
             // friends tab
             case 2:
-                return "Friends";
+                return "Requests";
 
             // default
             default:

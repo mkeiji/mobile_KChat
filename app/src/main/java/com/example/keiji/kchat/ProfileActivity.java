@@ -99,6 +99,10 @@ public class ProfileActivity extends AppCompatActivity {
          */
         mCurrentState = "not_friends";
 
+        // make the decline btn invisible and only visible in case that there is a friend request
+        mProfileDeclineBtn.setVisibility(View.INVISIBLE);
+        mProfileDeclineBtn.setEnabled(false);
+
         // load progress bar
         mProgressDialog = new ProgressDialog(this);
         mProgressDialog.setTitle("Loading User Data");
@@ -167,7 +171,7 @@ public class ProfileActivity extends AppCompatActivity {
                                 mCurrentState = "friends";
 
                                 // update the text on the send req btn
-                                mProfileSendReqBtn.setText("Unfriend this person");
+                                mProfileSendReqBtn.setText("Unpair");
 
                                 // make the decline btn invisible and only visible in case that there is a friend request
                                 mProfileDeclineBtn.setVisibility(View.INVISIBLE);
@@ -194,7 +198,7 @@ public class ProfileActivity extends AppCompatActivity {
                                         mCurrentState = "friends";
 
                                         // update the text on the send req btn
-                                        mProfileSendReqBtn.setText("Unfriend this person");
+                                        mProfileSendReqBtn.setText("Unpair");
 
                                         // make the decline btn invisible and only visible in case that there is a friend request
                                         mProfileDeclineBtn.setVisibility(View.INVISIBLE);
@@ -354,16 +358,17 @@ public class ProfileActivity extends AppCompatActivity {
                 // CRR - check if the request state is received
                 if (mCurrentState.equals("req_received")) {
 
+                    // final String currentDate = ServerValue.TIMESTAMP.toString();
                     final String currentDate = DateFormat.getDateInstance().format(new Date());
 
                     // add the other user to the current user's column in the friend table
-                    mFriendDatabase.child(mCurrentUser.getUid()).child(userId).setValue(currentDate).addOnSuccessListener(new OnSuccessListener<Void>() {
+                    mFriendDatabase.child(mCurrentUser.getUid()).child(userId).child("date").setValue(currentDate).addOnSuccessListener(new OnSuccessListener<Void>() {
 
                         @Override
                         public void onSuccess(Void aVoid) {
 
                             // store the current id in the other user's column
-                            mFriendDatabase.child(userId).child(mCurrentUser.getUid()).setValue(currentDate).addOnSuccessListener(new OnSuccessListener<Void>() {
+                            mFriendDatabase.child(userId).child(mCurrentUser.getUid()).child("date").setValue(currentDate).addOnSuccessListener(new OnSuccessListener<Void>() {
 
                                 @Override
                                 public void onSuccess(Void aVoid) {
@@ -389,7 +394,7 @@ public class ProfileActivity extends AppCompatActivity {
                                                     mCurrentState = "friends";
 
                                                     // update the text on the send req btn
-                                                    mProfileSendReqBtn.setText("Unfriend this person");
+                                                    mProfileSendReqBtn.setText("Unpair");
 
                                                     // make the decline btn invisible and only visible in case that there is a friend request
                                                     mProfileDeclineBtn.setVisibility(View.INVISIBLE);

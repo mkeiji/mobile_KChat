@@ -44,7 +44,14 @@
         <activity
             android:name=".UsersActivity"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".ProfileActivity"></activity>
+
+        <!-- profile activity -->
+        <activity android:name=".ProfileActivity" />
+
+        <!-- chat activity -->
+        <activity
+            android:name=".ChatActivity"
+            android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>
